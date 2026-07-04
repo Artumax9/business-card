@@ -1,0 +1,80 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it
+    to your card.
+    */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.avatar {
+    width: 200px;
+}
+
+.card {
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background: #aa8c7f; dusty taupe */
+    background: #a9d8d2; /*pear aqua*/
+    align-items: center;
+
+    color: #243035;
+    /* border-bottom: 18px double #a9d8d2; pear aqua */
+    border-bottom: 10px dashed #aa8c7f; /*dusty tape */
+
+    /* border-bottom: 6px solid #14cc60; */
+
+    border-radius: 6px;
+    /* box-shadow: [desplazamiento-x] [desplazamiento-y] [difuminado] [color]; box-shadow: 0px 4px 8px */
+    box-shadow: 0px 4px 8px #ccc;
+
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+    transition: all 0.5s ease;
+    animation-name: show;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.custom-border {
+    border: 1px dotted #ad413a; /*brown-red*/
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.15);
+
+}
+
+/* Estructura básica de un keyframe */
+@keyframes show {
+  0% {
+    /* Aquí definimos cómo empieza la tarjeta: invisible */
+    opacity: 0 ; /* ¿Qué valor pondrías aquí? */
+  }
+  100% {
+    /* Aquí definimos cómo termina: totalmente visible */
+    opacity: 1 ; /* ¿Y aquí? */
+  }
+}
